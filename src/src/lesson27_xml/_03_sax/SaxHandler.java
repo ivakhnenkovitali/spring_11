@@ -34,6 +34,8 @@ public class SaxHandler extends DefaultHandler {
         }
     }
 
+
+
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
         if (qName.equals("cat")) {
@@ -41,6 +43,9 @@ public class SaxHandler extends DefaultHandler {
             cat = null;
         }
     }
+
+
+
 
     @Override
     public void characters(char[] ch, int start, int length) throws SAXException {
