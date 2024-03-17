@@ -10,6 +10,7 @@ public class Main1 {
             public void run() {
                 System.out.println("Runnable from " + Thread.currentThread());
             }
+
         });
         t1.start();
         t2.start();
